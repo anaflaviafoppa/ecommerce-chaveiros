@@ -81,6 +81,7 @@ h3 {
 img {
   transition: all 0.5s;
   cursor: pointer;
+  padding-top: 1em;
 
   &:hover {
     transform: scale(1.1);

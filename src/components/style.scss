@@ -4,19 +4,57 @@
 @import './common/querys';
 @import './common/common';
 
-.header{
+.header {
   padding: 2.3em 0;
 
-  @media (max-width: $breakpoint-cellphone){
+  @media (max-width: $breakpoint-cellphone) {
     height: 100vh;
   }
 }
 
-.section02{
+.section02 {
   padding: 2.3em 0;
   background-color: $white;
+
+  h3 {
+    color: $gray;
+
+    &:nth-of-type(2n) {
+      padding-top: 2em;
+      padding-bottom: 0;
+    }
+  }
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 1.5em;
+  }
 }
 
-footer{
-  background-color: rgba(255,255,255,0.3);
+footer {
+  padding: 2.3em 0;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  h2 {
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .social-media {
+    font-size: $h2Desktop;
+    width: 30%;
+    
+    @media (max-width: $breakpoint-cellphone) {
+      text-align: center;
+    }
+
+    div{
+      margin-bottom: 0.8em;
+      
+    }
+  }
 }

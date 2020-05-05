@@ -8,7 +8,7 @@ const Header = (props) => {
         <div className="row d-flex align-items-center justify-content-center">
           <div className="col">
             <div>
-              <h3>Brands Logo</h3>
+              <h3>BrandLogo</h3>
               <h1>get your free </h1>
               <h1>ipsum lorem</h1>
               <h3>

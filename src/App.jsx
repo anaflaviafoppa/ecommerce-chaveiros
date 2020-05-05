@@ -4,6 +4,7 @@ import './App.css';
 
 /*VIEWS*/
 import HomePage from './views/Homepage';
+import SinglePage from './views/SinglePage';
 
 /*COMPONENTS*/
 import NavBar from './components/Navbar';
@@ -14,11 +15,10 @@ import { Route, Switch } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-    
-    
-       <Switch>
+      <Switch>
         <Route path="/" exact component={HomePage} />
-      </Switch> 
+        <Route path="/single" exact component={SinglePage} />
+      </Switch>
     </div>
   );
 }

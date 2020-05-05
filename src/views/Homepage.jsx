@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 /*Components*/
 import NavBar from '../components/Navbar';
@@ -12,7 +12,7 @@ const Homepage = () => {
   return (
     <div className="HomePage">
      
-       <NavBar />
+      <NavBar />
       <Header />
       <Section01 />
       <FooterPage /> 
