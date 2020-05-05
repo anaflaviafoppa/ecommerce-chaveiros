@@ -1,17 +1,24 @@
 import React from 'react';
+import './style.scss';
 
 const Header = (props) => {
   return (
-    <header>
-      <div className="container">
-        <div className="row">
-          <div className="col d-flex align-items-center justify-content-center">
+    <header className="header d-flex align-items-center justify-content-center">
+      <div className="container ">
+        <div className="row d-flex align-items-center justify-content-center">
+          <div className="col">
             <div>
               <h3>Brands Logo</h3>
-              <h1>get your free</h1>
+              <h1>get your free </h1>
               <h1>ipsum lorem</h1>
-              <h3>CHRISTMAS PROMOTION</h3>
-              <h2>GET YOURS NOW</h2>
+              <h3>
+                <span>
+                  CHRISTMAS <br /> PROMOTION
+                </span>
+              </h3>
+              <button className="btn__shop">
+                <h3>GET YOURS NOW</h3>
+              </button>
             </div>
           </div>
         </div>

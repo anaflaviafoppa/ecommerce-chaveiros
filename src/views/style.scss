@@ -1,0 +1,19 @@
+@import '../components/common/color';
+@import '../components/common/fonts';
+@import '../components/common/querys';
+@import '../components/common/sizefonts';
+
+
+
+.HomePage {
+  padding-top: 0;
+  background-image: url('/images/background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+
+  @media (max-width: $breakpoint-cellphone) {
+   background-size: auto 100%;
+   background-position: center 0;
+  }
+}

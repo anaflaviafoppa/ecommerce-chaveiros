@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section02 = () => {
   return (
-    <section>
+    <section className="section02">
       <div className="container">
         <div className="row">
           <div className="col d-flex align-items-container justify-content-center">
@@ -20,8 +20,11 @@ const Section02 = () => {
                 </div>
               </div>
 
-
               <h3>Only Today!</h3>
+              <h2>12 Units Left</h2>
+              <button className="btn__shop">
+                <h3>GET YOURS NOW</h3>
+              </button>
             </div>
           </div>
         </div>
