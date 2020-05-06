@@ -34,8 +34,8 @@ const Section02 = () => {
                 </div>
               </div>
 
-              <h3>Only Today!</h3>
-              <h2>12 Units Left</h2>
+              <h3 id="only-today">Only Today!</h3>
+              <h2>12 UNITS LEFTS</h2>
               <button className="btn__shop__second">
                 <h3>GET YOURS NOW</h3>
               </button>

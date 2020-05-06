@@ -27,7 +27,6 @@ const Homepage = () => {
 
   function handleScroll() {
     const currentScrollPos = window.pageYOffset;
-    console.log(currentScrollPos);
     const visible = navBarPosition.prevScrollpos > currentScrollPos;
 
     setnavBarPosition({

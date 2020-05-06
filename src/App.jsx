@@ -1,13 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 /*VIEWS*/
 import HomePage from './views/Homepage';
 import NotFoundPage from './views/NotFoundPage';
 
-/*COMPONENTS*/
-import NavBar from './components/Navbar';
+
 
 /*ROUTERS*/
 import { Route, Switch } from 'react-router-dom';

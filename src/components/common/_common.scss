@@ -9,7 +9,6 @@ h1 {
   color: $white;
   font-family: $verdana;
   font-weight: bold !important;
-  
 
   @media (max-width: $breakpoint-cellphone) {
     &:first-of-type {
@@ -35,14 +34,27 @@ h1 {
     &:first-of-type {
       font-size: $h1Desktop !important;
       padding: 1em 0 0 0;
-      margin:0;
+      margin: 0;
     }
 
     font-size: $h1maxDesktop !important;
     padding: 0 0 0.7em 0;
   }
+}
 
-  
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: $h2Desktop;
+  font-family: $verdana;
+
+  @media (min-width: $breakpoint-cellphone+1) and (max-width: $breakpoint-tablet) {
+    font-size: $h2Tablet !important;
+  }
+
+  @media (max-width: $breakpoint-cellphone) {
+    font-size: $h2Cellphone !important;
+  }
 }
 
 h3 {
@@ -68,12 +80,12 @@ h3 {
 
   span {
     color: $green;
-    font-size: 47.38px !important;
+    font-size: 35.54px !important;
 
     @media (max-width: $breakpoint-cellphone) {
       font-size: $h3Cellphone !important;
     }
-  
+
     @media (min-width: $breakpoint-cellphone+1) and (max-width: $breakpoint-tablet) {
       font-size: $h3Tablet !important;
     }
@@ -95,13 +107,13 @@ h3 {
     color: $gray;
     padding: 0;
     margin: 0;
-    font-size: 31.68px;
+    font-size: 23.76px;
     font-weight: bold !important;
 
     @media (max-width: $breakpoint-cellphone) {
       font-size: 20px;
     }
-  
+
     @media (min-width: $breakpoint-cellphone+1) and (max-width: $breakpoint-tablet) {
       font-size: $h3Tablet;
     }
@@ -123,13 +135,13 @@ h3 {
     color: $gray;
     padding: 0;
     margin: 0;
-    font-size: 37.72px;
+    font-size: 28.29px;
     font-weight: bold !important;
 
     @media (max-width: $breakpoint-cellphone) {
       font-size: 20px;
     }
-  
+
     @media (min-width: $breakpoint-cellphone+1) and (max-width: $breakpoint-tablet) {
       font-size: $h3Tablet;
     }
@@ -146,22 +158,16 @@ img {
   }
 }
 
-
 p {
-  
   text-transform: capitalize;
-  color:$gray;
+  color: $gray;
   font-size: $pDesktop;
 
-  @media (max-width: $breakpoint-cellphone){
+  @media (max-width: $breakpoint-cellphone) {
     font-size: $pCellphone;
   }
 
-
-  @media (min-width: $breakpoint-cellphone+1) and (max-width: $breakpoint-tablet){
+  @media (min-width: $breakpoint-cellphone+1) and (max-width: $breakpoint-tablet) {
     font-size: $pTablet;
   }
-
 }
-
-

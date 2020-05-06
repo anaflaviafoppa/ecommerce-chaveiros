@@ -9,7 +9,7 @@
 /******************************HEADER*/
 .header {
   padding: 2.3em 0;
-  height: 100vh;
+  
 
   @media (max-width: $breakpoint-cellphone) {
     height: 95vh;
@@ -34,6 +34,11 @@
   h2 {
     font-weight: bold;
     margin-bottom: 1.5em;
+  }
+
+  #only-today{
+    font-size: 31px;
+    font-weight: lighter;
   }
 }
 
