@@ -3,15 +3,20 @@
 @import './common/sizefonts';
 @import './common/querys';
 @import './common/common';
+@import '../../node_modules/@material/animation/variables';
 
+
+/******************************HEADER*/
 .header {
   padding: 2.3em 0;
 
   @media (max-width: $breakpoint-cellphone) {
-    height: 100vh;
+    height: 95vh;
+    padding: 0;
   }
 }
 
+/******************************SECTION 02*/
 .section02 {
   padding: 2.3em 0;
   background-color: $white;
@@ -31,6 +36,7 @@
   }
 }
 
+/*******************************FOOTER*/
 footer {
   padding: 2.3em 0;
   background-color: rgba(255, 255, 255, 0.8);
@@ -41,13 +47,18 @@ footer {
   }
 
   .social-media {
-    font-size: $h2Desktop;
+    font-size: $h3Desktop;
     text-align: center;
     display: flex;
     justify-content: flex-end;
 
-    &:first-child {
-      margin-left: 1em;
+    span {
+      transition: all 0.5s;
+      margin: 0 0.2em;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
 
     @media (max-width: $breakpoint-cellphone) {
@@ -56,6 +67,8 @@ footer {
   }
 }
 
+
+/*******************************SPINNER*/
 .SpinnerPage {
   height: 100vh;
   background-color: lighten($gray, 10%);
@@ -105,6 +118,7 @@ footer {
   }
 }
 
+/*******************************NAVBAR*/
 .NavBar__Brand {
   h3 {
     padding: 0;

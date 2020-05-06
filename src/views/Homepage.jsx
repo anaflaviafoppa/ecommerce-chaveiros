@@ -20,7 +20,7 @@ const Homepage = () => {
   useEffect(() => {
     setTimeout(() => {
       setloading(false);
-    }, 5000);
+    }, 3000);
 
     window.addEventListener('scroll', handleScroll);
   }, []);

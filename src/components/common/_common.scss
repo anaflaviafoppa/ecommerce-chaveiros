@@ -71,11 +71,11 @@ h3 {
     font-size: 47.38px !important;
 
     @media (max-width: $breakpoint-cellphone) {
-      font-size: $h3Cellphone;
+      font-size: $h3Cellphone !important;
     }
   
     @media (min-width: $breakpoint-cellphone+1) and (max-width: $breakpoint-tablet) {
-      font-size: $h3Tablet;
+      font-size: $h3Tablet !important;
     }
   }
 }
@@ -99,7 +99,7 @@ h3 {
     font-weight: bold !important;
 
     @media (max-width: $breakpoint-cellphone) {
-      font-size: $h3Cellphone;
+      font-size: 20px;
     }
   
     @media (min-width: $breakpoint-cellphone+1) and (max-width: $breakpoint-tablet) {
@@ -127,7 +127,7 @@ h3 {
     font-weight: bold !important;
 
     @media (max-width: $breakpoint-cellphone) {
-      font-size: $h3Cellphone;
+      font-size: 20px;
     }
   
     @media (min-width: $breakpoint-cellphone+1) and (max-width: $breakpoint-tablet) {

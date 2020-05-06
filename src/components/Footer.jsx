@@ -24,9 +24,15 @@ const FooterPage = () => {
             <div className="col-md text-md-right text-sm-center">
               <h2>Follow us</h2>
               <div className="social-media">
-                <FiInstagram />
-                <FaFacebookF />
-                <FaTwitter />
+                <span>
+                  <FiInstagram />
+                </span>
+                <span>
+                  <FaFacebookF />
+                </span>
+                <span>
+                  <FaTwitter />
+                </span>
               </div>
             </div>
           </div>
