@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <header className="header d-flex align-items-center justify-content-center" id="home">
       <div className="container ">
-        <div className="row d-flex align-items-center justify-content-center">
+        <div className="row d-flex align-items-center justify-content-center text-center">
           <div className="col">
             <div>
               <h3>BrandLogo</h3>

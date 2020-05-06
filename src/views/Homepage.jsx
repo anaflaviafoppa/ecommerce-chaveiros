@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 /*Components*/
-import NavBar from '../components/Navbar';
+import NavBar from '../components/Navbar/NavBar';
 import Header from '../components/Header';
 import Section01 from '../components/Section02';
 import FooterPage from '../components/Footer';

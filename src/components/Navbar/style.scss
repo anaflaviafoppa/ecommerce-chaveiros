@@ -1,0 +1,30 @@
+@import '../common/color';
+@import '../common/fonts';
+@import '../common/sizefonts';
+@import '../common/querys';
+@import '../common/common';
+@import '../../../node_modules/@material/animation/variables';
+
+
+/*******************************NAVBAR*/
+.NavBar__Brand {
+  h3 {
+    padding: 0 !important;
+    margin: 0;
+    color: $gray;
+    cursor: pointer;
+  }
+}
+
+.navbar-showup {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  transition: top 0.6s;
+  background-color: $white !important;
+}
+
+.navbar--hidden {
+  top: -65px;
+}

@@ -1,6 +1,10 @@
 import React from 'react';
+
+/*SOCIAL MEDIA ICONS:*/
 import { FaFacebookF, FaTwitter } from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
+
+/*FADE EFFECT:*/
 import Fade from 'react-reveal/Fade';
 
 const FooterPage = () => {

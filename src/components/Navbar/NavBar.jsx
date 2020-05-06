@@ -3,9 +3,9 @@ import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { Link as LinkRoute } from 'react-router-dom';
 
-const NavBar = (props) => {
-  const urlRedirect = props.onNotFoundPage ? '/' : 'home';
+import './style.scss';
 
+const NavBar = (props) => {
   return (
     <Navbar
       expand="lg"

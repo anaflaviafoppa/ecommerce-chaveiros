@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 /*VIEWS*/
 import HomePage from './views/Homepage';

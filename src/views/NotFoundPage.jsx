@@ -1,5 +1,5 @@
-import React, { Fragment, useState, useEffect } from 'react';
-import NavBar from '../components/Navbar';
+import React, {  useState, useEffect } from 'react';
+import NavBar from '../components/Navbar/NavBar';
 
 const NotFoundPage = () => {
   const [loading, setloading] = useState(true);
