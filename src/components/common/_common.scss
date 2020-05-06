@@ -34,12 +34,12 @@ h1 {
   @media (min-width: $breakpoint-tablet+1) {
     &:first-of-type {
       font-size: $h1Desktop !important;
-      padding: 1.5em 0 0 0;
+      padding: 1em 0 0 0;
       margin:0;
     }
 
     font-size: $h1maxDesktop !important;
-    padding: 0 0 1.5em 0;
+    padding: 0 0 0.7em 0;
   }
 
   

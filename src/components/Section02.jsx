@@ -25,12 +25,12 @@ const Section02 = () => {
                 <div className="col-md col-12-sm">
                   
                     <Link to="/single" params={{ img: './images/keychain2.png' }}>
-                      <img src="./images/keychain2.png" alt="Eleven" />
+                      <img src="./images/keychain2.png" alt="Barbara" />
                     </Link>
                   
                 </div>
                 <div className="col-md col-12-sm">
-                  <img src="./images/keychain3.png" alt="Eleven" />
+                  <img src="./images/keychain3.png" alt="Dustin" />
                 </div>
               </div>
 
