@@ -37,10 +37,12 @@
 .HomePage {
   padding-top: 0;
   background-image: url('/images/background.jpg');
+
   background-repeat: no-repeat;
+
   background-size: auto 100vh;
   background-attachment: fixed;
-  background-position: top left;
+  background-position:center right;
 
   -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 5s; /* Firefox < 16 */
@@ -49,7 +51,12 @@
   animation: fadein 5s;
 
   @media (max-width: $breakpoint-cellphone) {
-    background-size: auto 100%;
-    background-position: center 0;
+    background-size: auto;
+    background-position:center right;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    background-size: auto 100vh;
+    background-position:center right;
   }
 }

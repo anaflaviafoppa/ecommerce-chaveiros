@@ -21,7 +21,7 @@ const NavBar = (props) => {
         <Link
           className="ml-3 NavBar__Brand"
           activeClass="active"
-          to={urlRedirect}
+          to="home"
           spy={true}
           smooth={true}
           offset={-80}

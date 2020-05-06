@@ -3,12 +3,12 @@ import Fade from 'react-reveal/Fade';
 
 const Section02 = () => {
   return (
-    <section className="section02  pb-5">
+    <section className="section02  pb-5 pt-5">
       <Fade bottom>
         <div className="container">
           <div className="row">
             <div className="col d-flex align-items-container justify-content-center">
-              <div>
+              <div id="section02">
                 <h3 id="choose">Choose One:</h3>
                 <div className="row">
                   <div className="col-md col-12-sm">

@@ -22,7 +22,7 @@
 /******************************SECTION 02*/
 .section02 {
   background-color: $white;
-
+  padding-top: 2em;
   h3 {
     color: $gray;
 
@@ -146,4 +146,10 @@ footer {
 
 .navbar--hidden {
   top: -50px;
+}
+
+
+.pageNotFound{
+  height: 98vh;
+  background-color: $gray;
 }

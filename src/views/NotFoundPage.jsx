@@ -12,16 +12,16 @@ const NotFoundPage = () => {
     setTimeout(() => {
       setloading(false);
     }, 3000);
-
-    
   }, []);
 
-
   return (
-    <Fragment>
+    <div className="">
       <NavBar onHidden={navBarPosition.visible} onNotFoundPage={true} />
-      <h1> Page not found </h1>
-    </Fragment>
+
+      <div className="pageNotFound d-flex align-items-center justify-content-center">
+        <h1> 404 - Ops.. I did again! </h1>
+      </div>
+    </div>
   );
 };
 
