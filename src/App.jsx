@@ -4,7 +4,7 @@ import './App.css';
 
 /*VIEWS*/
 import HomePage from './views/Homepage';
-import SinglePage from './views/SinglePage';
+import NotFoundPage from './views/NotFoundPage';
 
 /*COMPONENTS*/
 import NavBar from './components/Navbar';
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/single" exact component={SinglePage} />
+        <Route component={NotFoundPage} />
       </Switch>
     </div>
   );
