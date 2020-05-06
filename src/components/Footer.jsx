@@ -5,9 +5,9 @@ import { FiInstagram } from 'react-icons/fi';
 const FooterPage = () => {
   return (
     <footer>
-      <div className="container mt-5">
+      <div className="container mt-5 mb-3">
         <div className="row">
-          <div className="col-md mb-3 text-md-left text-sm-center">
+          <div className="col-md text-md-left text-sm-center">
             <h2>Customer care</h2>
             <p>Contact Us</p>
             <p>FAQ</p>
@@ -21,15 +21,10 @@ const FooterPage = () => {
           </div>
           <div className="col-md text-md-right text-sm-center">
             <h2>Follow us</h2>
-            <div className="social-media" >
-              <div className="d-flex align-items-center justify-content-between">
-                <FiInstagram />
-                <FaFacebookF />
-              </div>
-              <div className="d-flex align-items-center justify-content-between">
-                <FaTwitter />
-                <FaLinkedinIn />
-              </div>
+            <div className="social-media">
+              <FiInstagram />
+              <FaFacebookF />
+              <FaTwitter />
             </div>
           </div>
         </div>

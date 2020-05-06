@@ -1,9 +1,38 @@
+@import '../../node_modules/@material/animation/variables';
+@import '../../node_modules/@material/animation/functions';
 @import '../components/common/color';
 @import '../components/common/fonts';
 @import '../components/common/querys';
 @import '../components/common/sizefonts';
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .HomePage {
   padding-top: 0;
@@ -11,9 +40,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s; /* Firefox < 16 */
+  -ms-animation: fadein 5s; /* Internet Explorer */
+  -o-animation: fadein 5s; /* Opera < 12.1 */
+  animation: fadein 5s;
   @media (max-width: $breakpoint-cellphone) {
-   background-size: auto 100%;
-   background-position: center 0;
+    background-size: auto 100%;
+    background-position: center 0;
   }
 }
