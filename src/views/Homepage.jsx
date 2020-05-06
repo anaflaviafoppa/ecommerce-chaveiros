@@ -11,24 +11,42 @@ import './style.scss';
 
 const Homepage = () => {
   const [loading, setloading] = useState(true);
-
-  //SET THE SPINNER 
-  useEffect(() => {
-    
-    setTimeout(() => {
-      setloading(false);
-    }, 3000);
-    
+  const [navBarPosition, setnavBarPosition] = useState({
+    prevScrollpos: 600,
+    visible: true,
   });
 
-  return (
-    loading ? <Spinner /> : (
+  //SET THE SPINNER
+  useEffect(() => {
+    setTimeout(() => {
+      setloading(false);
+    }, 5000);
+
+    window.addEventListener('scroll', handleScroll);
+  }, []);
+
+  function handleScroll() {
+    const currentScrollPos = window.pageYOffset;
+    console.log(currentScrollPos);
+    const visible = navBarPosition.prevScrollpos > currentScrollPos;
+
+    setnavBarPosition({
+      prevScrollpos: currentScrollPos,
+      visible,
+    });
+  }
+
+  return loading ? (
+    <div className="SpinnerPage">
+      <Spinner />
+    </div>
+  ) : (
     <div className="HomePage">
-      <NavBar />
+      <NavBar onHidden={navBarPosition.visible} />
       <Header />
       <Section01 />
       <FooterPage />
-    </div>)
+    </div>
   );
 };
 

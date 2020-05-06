@@ -4,7 +4,6 @@
 @import './common/querys';
 @import './common/common';
 
-
 .header {
   padding: 2.3em 0;
 
@@ -47,7 +46,7 @@ footer {
     display: flex;
     justify-content: flex-end;
 
-    &:first-child{
+    &:first-child {
       margin-left: 1em;
     }
 
@@ -57,6 +56,11 @@ footer {
   }
 }
 
+.SpinnerPage {
+  height: 100vh;
+  background-color: lighten($gray, 10%);
+}
+
 .loader,
 .loader:after {
   border-radius: 50%;
@@ -64,9 +68,10 @@ footer {
   height: 10em;
 }
 .loader {
-  margin: 60px auto;
+  margin: 0 auto;
   font-size: 10px;
   position: relative;
+  top: 40vh;
   text-indent: -9999em;
   border-top: 1.1em solid $gray;
   border-right: 1.1em solid $gray;
@@ -88,6 +93,7 @@ footer {
     transform: rotate(360deg);
   }
 }
+
 @keyframes load8 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -99,3 +105,24 @@ footer {
   }
 }
 
+.NavBar__Brand {
+  h3 {
+    padding: 0;
+    margin: 0;
+    color: $gray;
+    cursor: pointer;
+  }
+}
+
+.navbar-showup {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  transition: top 0.6s;
+  background-color: $white !important;
+}
+
+.navbar--hidden {
+  top: -50px;
+}

@@ -1,24 +1,24 @@
 import React, { Fragment } from 'react';
 import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
+import { Link, animateScroll as scroll } from "react-scroll";
 
-const NavBar = () => {
+
+const NavBar = (props) => {
+  console.log('props.onHidden',props.onHidden);
+
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-      </Navbar.Collapse>
+    <Navbar expand="lg" className={props.onHidden ? "navbar--hidden" : "NavBar sticky-top navbar-showup shadow-sm  rounded"}>
+      <Link
+                className="ml-3 NavBar__Brand"
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration= {1000}
+            >
+              <h3>BRANDLOGO</h3>
+            </Link>
     </Navbar>
   );
 };
