@@ -38,13 +38,15 @@
   padding-top: 0;
   background-image: url('/images/background.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100vh;
   background-attachment: fixed;
+
   -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 5s; /* Firefox < 16 */
   -ms-animation: fadein 5s; /* Internet Explorer */
   -o-animation: fadein 5s; /* Opera < 12.1 */
   animation: fadein 5s;
+
   @media (max-width: $breakpoint-cellphone) {
     background-size: auto 100%;
     background-position: center 0;
