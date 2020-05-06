@@ -3,7 +3,7 @@ import './style.scss';
 
 const Header = (props) => {
   return (
-    <header className="header d-flex align-items-center justify-content-center mb-md-5" id="home">
+    <header className="header d-flex align-items-center justify-content-center" id="home">
       <div className="container " >
         <div className="row d-flex align-items-center justify-content-center">
           <div className="col">

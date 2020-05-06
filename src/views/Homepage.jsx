@@ -16,12 +16,14 @@ const Homepage = () => {
     visible: true,
   });
 
-  //SET THE SPINNER
+  
   useEffect(() => {
+    //SET THE SPINNER
     setTimeout(() => {
       setloading(false);
     }, 3000);
 
+    //SET SCROLL NAV BAR
     window.addEventListener('scroll', handleScroll);
   }, []);
 
@@ -41,7 +43,7 @@ const Homepage = () => {
     </div>
   ) : (
     <div className="HomePage">
-      <NavBar onHidden={navBarPosition.visible} />
+      <NavBar onHidden={navBarPosition.visible}  onNotFoundPage={false}/>
       <Header />
       <Section01 />
       <FooterPage />

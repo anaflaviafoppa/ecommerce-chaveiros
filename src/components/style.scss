@@ -8,8 +8,10 @@
 
 /******************************HEADER*/
 .header {
-  padding: 2.3em 0;
-  
+  height: 100vh;
+  //padding: -2.3em 0  5em 0;
+  position: relative;
+  top:-50px;
 
   @media (max-width: $breakpoint-cellphone) {
     height: 95vh;
@@ -19,7 +21,6 @@
 
 /******************************SECTION 02*/
 .section02 {
-  padding: 2.3em 0;
   background-color: $white;
 
   h3 {
